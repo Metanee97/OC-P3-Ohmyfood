@@ -1,6 +1,8 @@
-@import "./config/colors";
-@import "./config/typography";
+@import "./utils/colors";
 
 @import "./base/base";
+@import "./base/typography";
 
 @import "./components/buttons";
+
+// layouts import
