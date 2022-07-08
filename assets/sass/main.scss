@@ -1,8 +1,10 @@
 @import "./utils/colors";
 
+@import "./base/normalize";
 @import "./base/base";
 @import "./base/typography";
 
 @import "./components/buttons";
 
 // layouts import
+@import "./layouts/footer";
