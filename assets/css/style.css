@@ -355,6 +355,15 @@ template {
   transition: opacity 0.3s ease;
 }
 
+.header__logo {
+  display: block;
+  width: 50%;
+  height: 30px;
+  margin-top: 1.7em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .logo-writing {
   font-family: "Shrikhand", cursive;
 }
