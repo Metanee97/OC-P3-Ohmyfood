@@ -1,11 +1,14 @@
 @import "./utils/colors";
 
 @import "./base/normalize";
-@import "./base/base";
 @import "./base/typography";
+@import "./base/base";
+
 
 @import "./components/buttons";
 
 // layouts import
-@import "./layouts/header";
+// @import "./layouts/header";
 @import "./layouts/footer";
+
+@import "./pages/header-home";
