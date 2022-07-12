@@ -350,6 +350,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.wrapper {
+  margin: 0 auto;
+  width: 90%;
+}
+
 .btn {
   background: linear-gradient(167deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
   color: #FFF;
