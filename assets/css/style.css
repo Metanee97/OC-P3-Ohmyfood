@@ -398,6 +398,22 @@ body {
   font-size: 1.2rem;
 }
 
+footer {
+  background-color: #2b2b2b;
+  color: #FFF;
+}
+footer .footer__logo {
+  padding: 1.5em 0em 0em 1.4em;
+  font-family: "Shrikhand", cursive;
+  font-size: 1rem;
+  font-weight: 100;
+}
+footer .footer__list {
+  padding: 0.1em 0em 0em 1.4em;
+  margin: 0;
+  padding: 0;
+}
+
 @media (min-width: 768px) {
   .header-home__top {
     display: flex;
