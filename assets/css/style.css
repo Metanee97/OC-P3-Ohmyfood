@@ -399,8 +399,8 @@ body {
 }
 
 footer {
-  background-color: #2b2b2b;
   color: #FFF;
+  background-color: #2b2b2b;
 }
 footer .footer__logo {
   padding: 1.5em 0em 0em 1.4em;
@@ -409,9 +409,18 @@ footer .footer__logo {
   font-weight: 100;
 }
 footer .footer__list {
-  padding: 0.1em 0em 0em 1.4em;
+  padding: 0.2em 0em 0em 1.4em;
   margin: 0;
-  padding: 0;
+}
+footer .footer__list li {
+  padding: 0em 1em 0.6em 0em;
+}
+footer .footer__list a {
+  color: #FFF;
+}
+footer .footer__list i {
+  font-size: 0.7rem;
+  padding-right: 0.9em;
 }
 
 @media (min-width: 768px) {
