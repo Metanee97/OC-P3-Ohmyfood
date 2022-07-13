@@ -1,0 +1,33 @@
+.restaurants-section {
+  padding: 2em 1.1em 1em 1.4em;
+  // background-color: #f6f6f6db;
+  background-color: #a05b5bdb;
+  .restaurants-card {
+      width: 330px;
+      height: 170px;
+      .restaurants-cards__img {
+        position: relative;
+        height: 170px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        overflow: hidden;
+        img {
+          position: absolute;
+          width: 100%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+        .restaurants-cards__content {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 10px 0px 0px 10px;
+          background-color: #FFF;
+          .restaurants-cards__content-icon {
+            font-size: 1.2rem;
+          }
+        }
+    }
+}

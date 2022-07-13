@@ -344,6 +344,7 @@ template {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   text-decoration: none;
+  list-style: none;
 }
 
 body {
@@ -364,8 +365,37 @@ body {
   box-shadow: 1px 4px 11px 0px rgba(166, 160, 160, 0.8588235294);
 }
 
-.logo-writing {
-  font-family: "Shrikhand", cursive;
+.restaurants-section {
+  padding: 2em 1.1em 1em 1.4em;
+  background-color: rgba(160, 91, 91, 0.8588235294);
+}
+.restaurants-section .restaurants-card {
+  width: 330px;
+  height: 170px;
+}
+.restaurants-section .restaurants-card .restaurants-cards__img {
+  position: relative;
+  height: 170px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+.restaurants-section .restaurants-card .restaurants-cards__img img {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.restaurants-section .restaurants-card .restaurants-cards__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px 0px 10px;
+  background-color: #FFF;
+}
+.restaurants-section .restaurants-card .restaurants-cards__content .restaurants-cards__content-icon {
+  font-size: 1.2rem;
 }
 
 @media (min-width: 768px) {
@@ -430,7 +460,7 @@ h1 + p {
 }
 
 .instructions {
-  margin-top: 3em;
+  margin: 3em 2em 0 2em;
 }
 
 .all-instructions {
@@ -440,7 +470,7 @@ h1 + p {
   position: relative;
   display: flex;
   align-items: center;
-  margin: 1.3em;
+  margin-bottom: 1.4em;
   padding: 0.5rem;
   border-radius: 15px;
   background-color: rgba(246, 246, 246, 0.8588235294);
@@ -448,7 +478,7 @@ h1 + p {
 }
 .all-instructions .instructions__item .instructions__item-number {
   position: absolute;
-  right: 270px;
+  right: 290px;
   display: flex;
   justify-content: center;
   align-items: center;
