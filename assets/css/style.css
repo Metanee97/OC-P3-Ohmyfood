@@ -356,6 +356,10 @@ body {
   width: 90%;
 }
 
+a {
+  color: #000000;
+}
+
 .btn {
   background: linear-gradient(167deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
   color: #FFF;
@@ -366,36 +370,39 @@ body {
 }
 
 .restaurants-section {
-  padding: 2em 1.1em 1em 1.4em;
+  padding: 2em 1.1em 2em 1.4em;
   background-color: rgba(246, 246, 246, 0.8588235294);
 }
-.restaurants-section .restaurants-card {
-  width: 330px;
-  height: 170px;
+.restaurants-section .restaurant-card {
+  width: 90vw;
+  height: 250px;
+  margin-bottom: 1.3em;
+  border-radius: 15px;
+  border-radius: 15px;
+  box-shadow: 2px 6px 12px 0px rgba(225, 225, 225, 0.8588235294);
 }
-.restaurants-section .restaurants-card .restaurants-cards__img {
-  position: relative;
+.restaurants-section .restaurant-card .restaurant-card__img {
   height: 170px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
   overflow: hidden;
 }
-.restaurants-section .restaurants-card .restaurants-cards__img img {
-  position: absolute;
+.restaurants-section .restaurant-card .restaurant-card__img img {
+  object-fit: cover;
   width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: 100%;
 }
-.restaurants-section .restaurants-card .restaurants-cards__content {
+.restaurants-section .restaurant-card .restaurant-card__content {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 10px 0px 0px 10px;
-  background-color: #FFF;
+  padding: 15px 23px 0px 14px;
 }
-.restaurants-section .restaurants-card .restaurants-cards__content .restaurants-cards__content-icon {
-  font-size: 1.2rem;
+.restaurants-section .restaurant-card .restaurant-card__content p {
+  margin: 0;
+  padding-bottom: 0.5em;
+}
+.restaurants-section .restaurant-card .restaurant-card__content .restaurant-card__content-icon {
+  font-size: 1.5rem;
 }
 
 footer {
@@ -403,7 +410,8 @@ footer {
   background-color: #2b2b2b;
 }
 footer .footer__logo {
-  padding: 1.5em 0em 0em 1.4em;
+  margin: 0;
+  padding: 1.9em 0em 1.2em 1.4em;
   font-family: "Shrikhand", cursive;
   font-size: 1rem;
   font-weight: 100;
