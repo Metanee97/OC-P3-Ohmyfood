@@ -429,4 +429,40 @@ h1 + p {
   font-size: 1.1rem;
 }
 
+.instructions {
+  margin-top: 3em;
+}
+
+.all-instructions {
+  margin-bottom: 4em;
+}
+.all-instructions .instructions__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 1.3em;
+  padding: 0.5rem;
+  border-radius: 15px;
+  background-color: rgba(246, 246, 246, 0.8588235294);
+  box-shadow: 2px 6px 12px 0px rgba(225, 225, 225, 0.8588235294);
+}
+.all-instructions .instructions__item .instructions__item-number {
+  position: absolute;
+  right: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  margin: 0 0.9em 0;
+  font-size: 0.8rem;
+  color: #FFF;
+  background-color: #9356DC;
+  border-radius: 50px;
+}
+.all-instructions .instructions__item .instructions__item-icon {
+  font-size: 1.2rem;
+  margin: 0 1.4em 0;
+}
+
 /*# sourceMappingURL=style.css.map */
