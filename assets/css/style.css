@@ -431,15 +431,19 @@ footer .footer__list i {
   display: flex;
   justify-content: space-between;
 }
-
-.header__logo {
+.header-restaurant__top .header-restaurant__back-home {
+  font-size: 1.3rem;
+  margin-top: 1.5em;
+  margin-left: 0.9em;
+}
+.header-restaurant__top .header__logo {
   height: 30px;
-  margin-top: 1.7em;
-  margin-bottom: 0.6em;
+  margin: 1.7em auto 0.9em;
 }
 
 .header-restaurant__img {
-  height: 50px;
+  height: auto;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
