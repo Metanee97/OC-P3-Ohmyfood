@@ -361,12 +361,13 @@ a {
 }
 
 .btn {
-  background: linear-gradient(167deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
+  padding: 1em 1.5em;
   color: #FFF;
   font-weight: 600;
+  background: linear-gradient(167deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
   border-radius: 50px;
-  padding: 15px 24px;
   box-shadow: 1px 4px 11px 0px rgba(166, 160, 160, 0.8588235294);
+  opacity: 0.7;
 }
 
 .restaurant-card {
