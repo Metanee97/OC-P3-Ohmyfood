@@ -70,7 +70,9 @@ h1+p {
 .all-instructions {
   margin-bottom: 4em;
   counter-reset: instructions-counter;
-
+  div:last-child {
+    background: $light-primary-color;
+  }
   .instructions__item {
     position: relative;
     display: flex;
@@ -96,6 +98,7 @@ h1+p {
       border-radius: 50px;
       background: $primary-color;
       }
+
     .instructions__item-icon {
       font-size: 1.2rem;
       margin: 0 1.4em 0;

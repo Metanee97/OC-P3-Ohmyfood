@@ -23,20 +23,24 @@
       transform: translate(-50%, -50%);
     }
   }
-      .restaurant-card__content {
-        display: flex;
-        justify-content: space-between;
-        padding: 15px 23px 0px 14px;
-        font-size: 1.1rem;
-        p {
-          margin: 0;
-          padding-bottom: 0.5em;
-        }
-        p:first-child {
-          font-weight: 600;
-        }
-          .restaurant-card__content__icon {
-            font-size: 1.5rem;
-          }
+}
+
+.restaurant-card__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 23px 0px 14px;
+  font-size: 1.1rem;
+  p {
+    margin: 0;
+    padding-bottom: 0.5em;
+  }
+    p:first-child {
+      font-weight: 600;
+    }
+      .restaurant-card__content__icon {
+        font-size: 1.5rem;
+        .fa-heart {
+          cursor: pointer;
+  }
       }
 }
