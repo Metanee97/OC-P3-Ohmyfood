@@ -523,6 +523,7 @@ h1 + p {
 
 .all-instructions {
   margin-bottom: 4em;
+  counter-reset: instructions-counter;
 }
 .all-instructions .instructions__item {
   position: relative;
@@ -534,19 +535,21 @@ h1 + p {
   background-color: rgba(246, 246, 246, 0.8588235294);
   box-shadow: 2px 6px 12px 0px rgba(225, 225, 225, 0.8588235294);
 }
-.all-instructions .instructions__item .instructions__item-number {
+.all-instructions .instructions__item::before {
+  counter-increment: instructions-counter;
+  content: counter(instructions-counter);
   position: absolute;
-  right: 290px;
+  left: -10px;
+  top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 25px;
   height: 25px;
-  margin: 0 0.9em 0;
-  font-size: 0.8rem;
+  font-weight: 100;
   color: #FFF;
-  background-color: #9356DC;
   border-radius: 50px;
+  background: #9356DC;
 }
 .all-instructions .instructions__item .instructions__item-icon {
   font-size: 1.2rem;
