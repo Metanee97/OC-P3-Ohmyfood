@@ -411,9 +411,6 @@ a {
 .restaurant-card__content .restaurant-card__content__icon {
   font-size: 1.5rem;
 }
-.restaurant-card__content .restaurant-card__content__icon .fa-heart {
-  cursor: pointer;
-}
 
 footer {
   color: #FFF;
@@ -559,8 +556,9 @@ h1 + p {
   background: #9356DC;
 }
 .all-instructions .instructions__item .instructions__item-icon {
-  font-size: 1.2rem;
   margin: 0 1.4em 0;
+  color: rgba(120, 118, 118, 0.8588235294);
+  font-size: 1.2rem;
 }
 
 .restaurants-section {
