@@ -3,7 +3,8 @@
   top: 272px;
   width: 100%;
   padding: 2em 1.1em 2em 1.4em;
-  background-color: $background-color;
+  background-color: aquamarine;
+  // background-color: $background-color;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   .menu__header {
@@ -19,4 +20,34 @@
       font-size: 1.2rem;
     }
   }
+}
+
+.menu__part {
+  border: 1px solid black;
+  >h2 {
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: #888585db;
+  }
+}
+
+.menu__item {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  .menu__item__content {
+    padding: 0.6em 0.5em 0.6em 0.6em;
+    .menu__item__content__title {
+      font-size: 0,7rem;
+      margin: 0;
+    }
+    p {
+      margin: 0;
+    }
+
+  }
+    .menu__item__price {
+      margin-top: 2em;
+    }
 }

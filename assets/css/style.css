@@ -463,7 +463,7 @@ footer .footer__list i {
   top: 272px;
   width: 100%;
   padding: 2em 1.1em 2em 1.4em;
-  background-color: rgba(246, 246, 246, 0.8588235294);
+  background-color: aquamarine;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
 }
@@ -479,6 +479,35 @@ footer .footer__list i {
 .menu .menu__header > .menu__icon {
   margin-right: 0.8em;
   font-size: 1.2rem;
+}
+
+.menu__part {
+  border: 1px solid black;
+}
+.menu__part > h2 {
+  font-size: 0.9rem;
+  font-weight: 100;
+  color: rgba(136, 133, 133, 0.8588235294);
+}
+
+.menu__item {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.menu__item .menu__item__content {
+  padding: 0.6em 0.5em 0.6em 0.6em;
+}
+.menu__item .menu__item__content .menu__item__content__title {
+  font-size: 0, 7rem;
+  margin: 0;
+}
+.menu__item .menu__item__content p {
+  margin: 0;
+}
+.menu__item .menu__item__price {
+  margin-top: 2em;
 }
 
 @media (min-width: 768px) {
