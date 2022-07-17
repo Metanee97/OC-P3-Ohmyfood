@@ -41,26 +41,22 @@
     margin-right: 0.9em;
     background-color: #FFF;
     border-top: none;
-
   }
 }
 
 .header-home__bottom {
   height: 265px;
-  background-color: #f6f6f6db;
+  background-color: $background-color;
+  h1 {
+    margin: 0 1.9em 0 1.9em;
+    padding-top: 1em;
+    font-size: 1.5rem;
+    +p {
+      margin-bottom: 2.5em;
+      font-size: 1.1rem;
+    }
+  }
 }
-
-h1 {
-  margin: 0 1.9em 0 1.9em;
-  padding-top: 1em;
-  font-size: 1.5rem;
-}
-
-h1+p {
-  margin-bottom: 2.5em;
-  font-size: 1.1rem;
-}
-
 
 // Here is the instructions section
 .instructions {
@@ -80,7 +76,7 @@ h1+p {
     margin-bottom: 1.4em;
     padding: 0.5rem;
     border-radius: 15px;
-    background-color: #f6f6f6db;
+    background-color: $background-color;
     box-shadow: 2px 6px 12px 0px #e1e1e1db;
     &::before {
       counter-increment: instructions-counter;
@@ -110,6 +106,6 @@ h1+p {
 // Here is the restaurants section
 .restaurants-section {
   padding: 2em 1.1em 2em 1.4em;
-  background-color: #f6f6f6db;
+  background-color: $background-color;
   // height: 500px;
 }

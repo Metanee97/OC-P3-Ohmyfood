@@ -1,0 +1,22 @@
+.menu {
+  position: absolute;
+  top: 272px;
+  width: 100%;
+  padding: 2em 1.1em 2em 1.4em;
+  background-color: $background-color;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  .menu__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: $logo;
+    .menu__header__title {
+      margin: 0;
+    }
+    &>.menu__icon {
+      margin-right: 0.8em;
+      font-size: 1.2rem;
+    }
+  }
+}
