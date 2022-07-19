@@ -363,11 +363,14 @@ a {
 .btn {
   padding: 1em 1.5em;
   color: #FFF;
-  font-weight: 600;
+  font-weight: 400;
   background: linear-gradient(167deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
   border-radius: 50px;
   box-shadow: 1px 4px 11px 0px rgba(166, 160, 160, 0.8588235294);
-  opacity: 0.7;
+}
+
+.btn-order {
+  padding: 1em 3.5em;
 }
 
 .restaurant-card {
@@ -459,11 +462,10 @@ footer .footer__list i {
 }
 
 .menu {
-  position: absolute;
   top: 272px;
   width: 100%;
   padding: 2em 1.1em 2em 1.4em;
-  background-color: aquamarine;
+  background-color: #f8f6f6;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
 }
@@ -474,40 +476,65 @@ footer .footer__list i {
   font-family: "Shrikhand", cursive;
 }
 .menu .menu__header .menu__header__title {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 100;
+  font-size: 1.7rem;
 }
 .menu .menu__header > .menu__icon {
-  margin-right: 0.8em;
-  font-size: 1.2rem;
+  margin-right: 0.5em;
+  font-size: 1.8rem;
 }
 
-.menu__part {
-  border: 1px solid black;
+.menu__part__title {
+  position: relative;
+  margin-bottom: 1.6em;
+  margin-top: 2.7em;
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(115, 113, 113, 0.8588235294);
 }
-.menu__part > h2 {
-  font-size: 0.9rem;
-  font-weight: 100;
-  color: rgba(136, 133, 133, 0.8588235294);
+.menu__part__title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 22px;
+  width: 41px;
+  height: 3px;
+  background-color: #99E2D0;
 }
 
 .menu__item {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1em;
   background-color: #fff;
   border-radius: 10px;
+  box-shadow: 2px 6px 12px 0px rgba(225, 225, 225, 0.8588235294);
 }
 .menu__item .menu__item__content {
   padding: 0.6em 0.5em 0.6em 0.6em;
+  line-height: 1.6em;
+  font-weight: 100;
 }
 .menu__item .menu__item__content .menu__item__content__title {
-  font-size: 0, 7rem;
+  font-size: 1.1rem;
   margin: 0;
 }
 .menu__item .menu__item__content p {
   margin: 0;
+  color: rgba(115, 113, 113, 0.8588235294);
 }
 .menu__item .menu__item__price {
+  margin-right: 1em;
   margin-top: 2em;
+  font-weight: bold;
+}
+
+.btn-order {
+  margin-top: 3em;
+  margin-bottom: 5em;
 }
 
 @media (min-width: 768px) {
