@@ -62,9 +62,6 @@
 .all-instructions {
   margin-bottom: 4em;
   counter-reset: instructions-counter;
-  div:last-child {
-    background: $light-primary-color;
-  }
   .instructions__item {
     position: relative;
     display: flex;
@@ -90,13 +87,14 @@
       border-radius: 50px;
       background: $primary-color;
     }
+    &:hover {
+      background: $light-primary-color;
+      // color: $primary-color;
+    }
     .instructions__item-icon {
       margin: 0 1.4em 0;
       color: #787676db;
       font-size: 1.2rem;
-    }
-    .colored-icon {
-      color: $primary-color;
     }
   }
 }

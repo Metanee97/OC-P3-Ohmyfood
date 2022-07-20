@@ -53,10 +53,11 @@
     }
       .restaurant-card__content__icon {
         font-size: 1.5rem;
-        // cursor: pointer;
       }
 }
 
-// .fa-heart {
-// cursor: pointer;
-// }
+.fa-heart {
+  color: $button-color;
+  font-weight: 600;
+  // transition: all 400ms linear;
+}
