@@ -457,12 +457,27 @@ footer .footer__logo {
   font-size: 1rem;
   font-weight: 100;
 }
+@media (min-width: 992px) {
+  footer .footer__logo {
+    margin-bottom: 2em;
+  }
+}
 footer .footer__list {
   padding: 0.2em 0em 0em 1.4em;
   margin: 0;
 }
+@media (min-width: 992px) {
+  footer .footer__list {
+    display: flex;
+  }
+}
 footer .footer__list li {
   padding: 0em 1em 0.6em 0em;
+}
+@media (min-width: 992px) {
+  footer .footer__list li {
+    margin-right: 4em;
+  }
 }
 footer .footer__list a {
   color: #FFF;
