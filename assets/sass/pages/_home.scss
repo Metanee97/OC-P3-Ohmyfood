@@ -105,3 +105,11 @@
   background-color: $background-color;
   // height: 500px;
 }
+
+.all-restaurants-cards {
+  @media (min-width : 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}

@@ -376,10 +376,22 @@ a {
 .restaurant-card {
   width: 90vw;
   height: 250px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 1.3em;
   border-radius: 15px;
   border-radius: 15px;
   box-shadow: 1px 4px 11px 0px rgba(166, 160, 160, 0.8588235294);
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .restaurant-card {
+    width: 40vw;
+  }
+}
+@media (min-width: 992px) {
+  .restaurant-card {
+    width: 40vh;
+  }
 }
 .restaurant-card .restaurant-card__img {
   position: relative;
@@ -663,6 +675,14 @@ footer .footer__list i {
 .restaurants-section {
   padding: 2em 1.1em 2em 1.4em;
   background-color: rgba(246, 246, 246, 0.8588235294);
+}
+
+@media (min-width: 768px) {
+  .all-restaurants-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
