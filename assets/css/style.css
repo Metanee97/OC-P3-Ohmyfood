@@ -390,7 +390,7 @@ a {
 }
 @media (min-width: 992px) {
   .restaurant-card {
-    width: 40vh;
+    width: 50vh;
   }
 }
 .restaurant-card .restaurant-card__img {
@@ -631,6 +631,16 @@ footer .footer__list i {
 
 .instructions {
   margin: 3em 2em 0 2em;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .instructions {
+    margin: 3em 5em 0 5em;
+  }
+}
+@media (min-width: 992px) {
+  .instructions {
+    margin: 3em 15em 0 15em;
+  }
 }
 
 .all-instructions {
