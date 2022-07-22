@@ -59,13 +59,18 @@
     p:first-child {
       font-weight: 600;
     }
-      .restaurant-card__content__icon {
-        font-size: 1.5rem;
-      }
 }
 
 .fa-heart {
-  color: $button-color;
+  // color: $button-color;
+  font-size: 1.5rem;
+  background-image: $button-color;
   font-weight: 600;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+
   // transition: all 400ms linear;
 }
