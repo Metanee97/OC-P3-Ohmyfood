@@ -559,9 +559,10 @@ footer .footer__list i {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 67px;
   margin-bottom: 1em;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 15px;
   box-shadow: 2px 6px 12px 0px rgba(225, 225, 225, 0.8588235294);
 }
 .menu__item .menu__item__content {
@@ -571,16 +572,38 @@ footer .footer__list i {
 }
 .menu__item .menu__item__content .menu__item__content__title {
   font-size: 1.1rem;
+  font-weight: 500;
   margin: 0;
 }
 .menu__item .menu__item__content p {
+  font-size: 0.9rem;
+  width: 260px;
   margin: 0;
-  color: rgba(115, 113, 113, 0.8588235294);
+  font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__item .menu__item__price {
   margin-right: 1em;
   margin-top: 2em;
-  font-weight: bold;
+  font-weight: 500;
+}
+
+.menu__item:hover .menu__item--checked {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18%;
+  height: 100%;
+  background-color: #99E2D0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.menu__item:hover .menu__item--checked .fa-check-circle {
+  font-size: 1.3rem;
+  color: #fff;
 }
 
 .btn-order {
@@ -666,7 +689,8 @@ footer .footer__list i {
   margin-bottom: 4em;
   counter-reset: instructions-counter;
 }
-.all-instructions .instructions__item {
+
+.instructions__item {
   position: relative;
   display: flex;
   align-items: center;
@@ -676,7 +700,7 @@ footer .footer__list i {
   background-color: rgba(246, 246, 246, 0.8588235294);
   box-shadow: 2px 6px 12px 0px rgba(225, 225, 225, 0.8588235294);
 }
-.all-instructions .instructions__item::before {
+.instructions__item::before {
   counter-increment: instructions-counter;
   content: counter(instructions-counter);
   position: absolute;
@@ -692,10 +716,14 @@ footer .footer__list i {
   border-radius: 50px;
   background: #9356DC;
 }
-.all-instructions .instructions__item:hover {
+.instructions__item.is-highlight {
   background: #f4eefc;
+  color: #9356DC;
 }
-.all-instructions .instructions__item .instructions__item-icon {
+.instructions__item.is-highlight .instructions__item-icon {
+  color: #9356DC;
+}
+.instructions__item .instructions__item-icon {
   margin: 0 1.4em 0;
   color: rgba(120, 118, 118, 0.8588235294);
   font-size: 1.2rem;
