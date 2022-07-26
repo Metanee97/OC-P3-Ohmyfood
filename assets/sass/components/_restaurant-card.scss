@@ -61,16 +61,29 @@
     }
 }
 
+.restaurant-card__content__icon {
+  background-color: #f7f7f7;
+  border: none;
+}
+
 .fa-heart {
   // color: $button-color;
   font-size: 1.5rem;
-  background-image: $button-color;
-  font-weight: 600;
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-
+  cursor: pointer;
   // transition: all 400ms linear;
+  .progress-heart-icon {
+    transition: transform 2000ms;
+    transform: scaleX(0);
+    transform-origin: bottom 50%;
+  }
+  &:hover {
+    transform: scaleX(1);
+    background-image: $button-color;
+    font-weight: 600;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
 }
