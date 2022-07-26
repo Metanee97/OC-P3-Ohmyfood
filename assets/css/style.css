@@ -529,6 +529,7 @@ footer .footer__list i {
   top: -3.7em;
   width: 100%;
   max-width: 100%;
+  margin-bottom: -4em;
   padding: 2em 1.1em 2em 1.4em;
   background-color: #f8f6f6;
   border-top-left-radius: 50px;
@@ -622,7 +623,7 @@ footer .footer__list i {
 
 .btn-order {
   margin-top: 3em;
-  margin-bottom: 5em;
+  margin-bottom: 2em;
   text-align: center;
 }
 
