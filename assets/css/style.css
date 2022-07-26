@@ -519,13 +519,14 @@ footer .footer__list i {
 }
 
 .header-restaurant__background-img {
-  height: auto;
-  width: 105%;
+  height: 280px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .menu {
   position: relative;
-  top: -5.7em;
+  top: -3.7em;
   width: 100%;
   max-width: 100%;
   padding: 2em 1.1em 2em 1.4em;
