@@ -605,7 +605,7 @@ footer .footer__list i {
   font-weight: 500;
 }
 
-.menu__item:hover .menu__item-checked {
+.menu__item-checked {
   display: inline-block;
   display: flex;
   align-items: center;
@@ -615,10 +615,17 @@ footer .footer__list i {
   background-color: #99E2D0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  transition: transform 330ms ease-in-out;
+  transform: scale(0);
 }
-.menu__item:hover .menu__item-checked__icon {
+
+.menu__item-checked__icon {
   font-size: 1.3rem;
   color: #fff;
+}
+
+.menu__item:hover .menu__item-checked {
+  transform: scale(1);
 }
 
 .btn-order {
