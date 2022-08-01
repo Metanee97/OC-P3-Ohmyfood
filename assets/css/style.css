@@ -608,6 +608,7 @@ input {
   margin-right: 1em;
   margin-top: 2em;
   font-weight: 500;
+  transition: transform 330ms ease-in-out;
 }
 
 .menu__item-selected {
@@ -626,16 +627,23 @@ input {
   border-bottom-right-radius: 15px;
   transition: transform 200ms ease-in-out;
   transform: scale(0);
+  overflow: hidden;
 }
 
-.menu__item:hover {
-  width: 90%;
+.menu__item-selected__icon {
+  transition: transform 700ms ease-in-out;
+  transform: rotate(-1turn);
 }
+
 .menu__item:hover + .menu__item-selected {
   transform: translateX(-18px) scale(1);
 }
+.menu__item:hover + .menu__item-selected .menu__item-selected__icon {
+  transform: rotate(0turn);
+}
 .menu__item:hover > .menu__item__price {
   margin-right: 2em;
+  transform: translateX(-160%);
 }
 
 .btn-order {
