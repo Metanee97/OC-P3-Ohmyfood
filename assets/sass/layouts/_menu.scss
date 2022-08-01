@@ -94,33 +94,30 @@ input {display: none;}
   align-items: center;
   justify-content: center;
   height: 67px;
-  // width: 0%;
+  width: 12%;
   font-size: 1.3rem;
   color: #fff;
   background-color: $tertiary-color;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  // transition: transform 330ms ease-in-out;
-  // transform: scale(0);
-}
-
-.menu__item-selected {
-
+  transition: transform 200ms ease-in-out;
+  transform: scale(0);
 }
 
 .menu__item:hover {
-  width: 80%;
-  .menu__item-checked {
-    transform: scale(1) translateX(50px);
-    transition: transform 330ms ease-in-out;
+  width: 90%;
+  + .menu__item-selected {
+    transform: translateX(-18px) scale(1);
+    // transition: transform 330ms ease-in-out;
   }
-  .menu__item-selected {
-    transition: rotate(-90deg);
+  > .menu__item__price {
+    margin-right: 2em;
   }
+  // .menu__item-selected {
+  //   transition: rotate(-90deg);
+  // }
 }
-.test {
-  display: flex;
-}
+
 .btn-order {
   margin-top: 3em;
   margin-bottom: 2em;
