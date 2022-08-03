@@ -535,6 +535,12 @@ footer .footer__list i {
   justify-content: space-between;
   font-family: "Shrikhand", cursive;
 }
+@media (min-width: 768px) {
+  .menu .menu__header {
+    justify-content: space-around;
+    margin-bottom: 40px;
+  }
+}
 .menu .menu__header .menu__header__title {
   margin-top: 0;
   margin-bottom: 0;
@@ -544,6 +550,17 @@ footer .footer__list i {
 .menu .menu__header > .menu__icon {
   margin-right: 0.5em;
   font-size: 1.8rem;
+  font-weight: 100;
+}
+
+.all-menu {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .all-menu {
+    align-items: center;
+  }
 }
 
 .menu__part__title {
@@ -580,6 +597,11 @@ input {
   box-shadow: 2px 6px 12px 0px rgba(225, 225, 225, 0.8588235294);
   cursor: pointer;
 }
+@media (min-width: 768px) {
+  .menu__item {
+    width: 65vw;
+  }
+}
 .menu__item .menu__item__content {
   padding: 0.6em 0.5em 0.6em 0.6em;
   line-height: 1.6em;
@@ -607,8 +629,8 @@ input {
 
 .menu__item-selected {
   position: absolute;
-  top: 150.9px;
-  right: 16.7px;
+  top: 0px;
+  right: -1.3px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -623,15 +645,15 @@ input {
   transform-origin: right;
   transition: all 500ms cubic-bezier(1, 0, 1, 1);
 }
-.menu__item-selected .menu__item-selected__icon {
+.menu__item-selected > .menu__item-selected__icon {
   transition: transform 700ms ease-in-out;
   transform: rotate(0deg);
 }
 
-.menu__item:hover + .menu__item-selected {
+.menu__item:hover > .menu__item-selected {
   transform: translateX(-1px) scale(1);
 }
-.menu__item:hover + .menu__item-selected .menu__item-selected__icon {
+.menu__item:hover > .menu__item-selected .menu__item-selected__icon {
   transform: rotate(360deg);
 }
 .menu__item:hover > .menu__item__price {
