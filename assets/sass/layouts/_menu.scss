@@ -100,20 +100,19 @@ input {display: none;}
   background-color: $tertiary-color;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  transition: transform 330ms ease-in-out;
-  transform-origin: right;
   transform: scale(0);
-  overflow: hidden;
-}
-
-.menu__item-selected__icon {
-  transition: transform 700ms ease-in-out;
-  transform: rotate(0deg);
+  transform-origin: right;
+  transition: all 500ms cubic-bezier(1, 0, 1, 1);
+  // overflow: hidden;
+  .menu__item-selected__icon {
+      transition: transform 700ms ease-in-out;
+      transform: rotate(0deg);
+    }
 }
 
 .menu__item:hover {
   + .menu__item-selected {
-    transform: scale(1) translateX(-1px);
+    transform: translateX(-1px) scale(1);
     .menu__item-selected__icon {
       transform: rotate(360deg);
     }
