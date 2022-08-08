@@ -71,12 +71,14 @@
   font-size: 1.5rem;
   background-size: 100%;
   cursor: pointer;
+  transition: all 1s ease-in;
+  background-color: black;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
   &:hover {
     background-image: $button-color;
     font-weight: 600;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
   }
 }

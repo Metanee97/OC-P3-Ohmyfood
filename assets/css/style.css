@@ -447,14 +447,16 @@ a {
   font-size: 1.5rem;
   background-size: 100%;
   cursor: pointer;
-}
-.fa-heart:hover {
-  background-image: linear-gradient(167deg, rgb(255, 121, 218) 0%, rgb(146, 86, 220) 100%);
-  font-weight: 600;
+  transition: all 1s ease-in;
+  background-color: black;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+}
+.fa-heart:hover {
+  background-image: linear-gradient(167deg, rgb(255, 121, 218) 0%, rgb(146, 86, 220) 100%);
+  font-weight: 600;
 }
 
 footer {
@@ -595,6 +597,7 @@ input {
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 2px 6px 12px 0px rgba(225, 225, 225, 0.8588235294);
+  overflow: hidden;
   cursor: pointer;
 }
 @media (min-width: 768px) {
@@ -624,40 +627,43 @@ input {
   margin-right: 1em;
   margin-top: 2em;
   font-weight: 500;
-  transition: margin-right 330ms ease-in;
+  transition: transform 330ms ease;
 }
 
 .menu__item-selected {
   position: absolute;
   top: 0px;
-  right: -1.3px;
+  right: -80px;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 67px;
-  width: 12%;
+  width: 18%;
   font-size: 1.3rem;
   color: #fff;
   background-color: #99E2D0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  transform: scale(0);
   transform-origin: right;
-  transition: all 500ms cubic-bezier(1, 0, 1, 1);
+  transition: all 500ms ease;
 }
 .menu__item-selected > .menu__item-selected__icon {
-  transition: transform 700ms ease-in-out;
+  transition: transform 700ms ease;
   transform: rotate(0deg);
 }
 
+.menu__item:hover > .menu__item__content {
+  width: 60%;
+  overflow: hidden;
+}
 .menu__item:hover > .menu__item-selected {
-  transform: translateX(-1px) scale(1);
+  right: 0px;
 }
 .menu__item:hover > .menu__item-selected .menu__item-selected__icon {
   transform: rotate(360deg);
 }
 .menu__item:hover > .menu__item__price {
-  margin-right: 5em;
+  transform: translateX(-110%);
 }
 
 .btn-order {
