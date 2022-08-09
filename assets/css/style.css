@@ -672,6 +672,29 @@ input {
   text-align: center;
 }
 
+.load-7 {
+  position: absolute;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #4b9cdb;
+}
+
+.load-7 .square {
+  animation: loadingG 1.5s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
+}
+
+@keyframes loadingG {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(800px, 0) rotate(360deg);
+  }
+}
 @media (min-width: 768px) {
   .header-home__top {
     display: flex;
