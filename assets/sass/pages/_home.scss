@@ -47,39 +47,6 @@
     transform: translate(0, 0);
   }
 }
-// .loading-spinner {
-//   position: fixed;
-//   background-color: yellow;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-//   z-index: 10;
-//   opacity: 0.8;
-// }
-
-// .loading-spinner-square {
-//   width: 7%;
-//   height: 11%;
-//   border-radius: 4px;
-//   background: $button-color;
-//   margin-top: 45%;
-// }
-
-// .loading-spinner .loading-spinner-square {
-//   animation: loadingG 2s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite alternate;
-// }
-
-// @keyframes loadingG {
-//   0% {
-//     transform: translateX(0) rotate(0deg);
-//   }
-
-//   100% {
-//     transform: translateX(100vw) rotate(360deg);
-//   }
-// }
-
 
 // Header of the home page
 .header-home__top {
