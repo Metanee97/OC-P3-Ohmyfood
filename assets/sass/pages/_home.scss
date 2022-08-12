@@ -11,19 +11,17 @@
   opacity: 0.9;
 }
 .loading-spinner-round {
-  // position: relative;
   display: inline-block;
-  // left: 50%;
   width: 40px;
   height: 40px;
-  margin-top: 50%;
+  margin-top: 20em;
   border-radius: 50px;
   background: $button-color;
-  // z-index: 20;
 }
 
 .loading-spinner .loading-spinner-round:nth-last-child(1) {
-  animation: loading 0.7s 0.1s linear infinite;
+  animation: loading 3s linear infinite;
+  animation-delay: 0.1s;
 }
 
 .loading-spinner .loading-spinner-round:nth-last-child(2) {
