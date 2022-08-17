@@ -463,29 +463,37 @@ footer {
   color: #FFF;
   background-color: #2b2b2b;
 }
-footer .footer__logo {
+
+.footer__logo {
   margin: 0;
   padding: 1.9em 0em 1.2em 1.4em;
   font-family: "Shrikhand", cursive;
   font-size: 1rem;
   font-weight: 100;
 }
-footer .footer__list {
+
+.footer__list {
   padding: 0.2em 0em 2em 1.4em;
   margin: 0 auto 20px;
 }
-@media (min-width: 992px) {
-  footer .footer__list {
+@media (min-width: 768px) {
+  .footer__list {
     display: flex;
+    padding: 1.2em 0em 2em 1.4em;
   }
 }
-footer .footer__list li {
+.footer__list li {
   padding: 0em 1em 0.6em 0em;
 }
-footer .footer__list a {
+@media (min-width: 768px) {
+  .footer__list li {
+    padding-right: 4em;
+  }
+}
+.footer__list a {
   color: #FFF;
 }
-footer .footer__list i {
+.footer__list i {
   font-size: 0.7rem;
   padding-right: 0.9em;
 }
