@@ -5,10 +5,10 @@
   background: $button-color;
   border-radius: 50px;
   box-shadow: 1px 4px 11px 0px #a6a0a0db;
-  // opacity: 0.7;
-  // &:hover {
-  //   background-color: $button-color-hover;
-  // }
+  &:hover {
+    box-shadow: 1px 4px 11px 4px #a6a0a0db;
+    opacity: 0.9;
+  }
 }
 
 .btn-order {

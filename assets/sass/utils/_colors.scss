@@ -5,4 +5,4 @@ $tertiary-color: #99E2D0;
 $light-primary-color: lighten($primary-color, 36%);
 $background-color: #f6f6f6db;
 $button-color: linear-gradient(167deg, rgb(255, 121, 218) 0%, rgb(146, 86, 220) 100%);
-// $button-color-hover: lighten($button-color, 10%);
+$button-color-hover: linear-gradient(167deg, rgb(255, 121, 218) 0%, rgb(146, 86, 220) 100%);
