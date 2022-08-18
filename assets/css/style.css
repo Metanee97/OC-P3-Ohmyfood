@@ -442,12 +442,12 @@ a {
   font-weight: 600;
 }
 
-.restaurant-card__content__icon {
+.restaurant-card__content__button-icon {
   background-color: #f7f7f7;
   border: none;
 }
 
-.fa-heart {
+.restaurant-card__content__icon {
   font-size: 1.5rem;
   background-size: 100%;
   cursor: pointer;
@@ -458,7 +458,7 @@ a {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
-.fa-heart:hover {
+.restaurant-card__content__icon:hover {
   background-image: linear-gradient(167deg, rgb(255, 121, 218) 0%, rgb(146, 86, 220) 100%);
   font-weight: 600;
 }
@@ -592,15 +592,7 @@ input {
 @keyframes fade-in-menus {
   0% {
     opacity: 0;
-    transform: translateY(10%);
-  }
-  30% {
-    opacity: 0.3;
-    transform: translateY(0%);
-  }
-  50% {
-    opacity: 0.5;
-    transform: translateY(0%);
+    transform: translateY(25%);
   }
   100% {
     opacity: 1;
@@ -619,7 +611,7 @@ input {
   box-shadow: 2px 6px 12px 0px rgba(225, 225, 225, 0.8588235294);
   overflow: hidden;
   cursor: pointer;
-  animation: fade-in-menus 1s;
+  animation: fade-in-menus 2s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
@@ -655,20 +647,22 @@ input {
   transition: transform 330ms ease;
 }
 
-#starter-1, #dish-1, #dessert-1 {
+.starter-1,
+.dish-1,
+.dessert-1 {
   animation-delay: 0.1s;
 }
 
-#starter-2,
-#dish-2,
-#dessert-2 {
-  animation-delay: 0.2s;
+.starter-2,
+.dish-2,
+.dessert-2 {
+  animation-delay: 0.3s;
 }
 
-#starter-3,
-#dish-3,
-#dessert-3 {
-  animation-delay: 0.3s;
+.starter-3,
+.dish-3,
+.dessert-3 {
+  animation-delay: 0.5s;
 }
 
 .menu__item-selected {
