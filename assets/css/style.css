@@ -589,18 +589,22 @@ input {
   display: none;
 }
 
-@keyframes fade-in-menu {
+@keyframes fade-in-menus {
   0% {
-    transform: translateY(0%);
     opacity: 0;
+    transform: translateY(10%);
   }
-  300% {
-    transform: translateY(50%);
+  30% {
     opacity: 0.3;
+    transform: translateY(0%);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(0%);
   }
   100% {
-    transform: translateY(0%);
     opacity: 1;
+    transform: translateY(0%);
   }
 }
 .menu__item {
@@ -615,7 +619,9 @@ input {
   box-shadow: 2px 6px 12px 0px rgba(225, 225, 225, 0.8588235294);
   overflow: hidden;
   cursor: pointer;
-  animation: fade-in-menu 0.8s;
+  animation: fade-in-menus 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 @media (min-width: 768px) {
   .menu__item {
@@ -649,46 +655,26 @@ input {
   transition: transform 330ms ease;
 }
 
-#starter-1 .menu__item:nth-child(1) {
+#starter-1, #dish-1, #dessert-1 {
   animation-delay: 0.1s;
 }
 
-.menu__item:nth-child(2) {
+#starter-2,
+#dish-2,
+#dessert-2 {
   animation-delay: 0.2s;
 }
 
-.menu__item:nth-child(3) {
+#starter-3,
+#dish-3,
+#dessert-3 {
   animation-delay: 0.3s;
-}
-
-.menu__item:nth-child(4) {
-  animation-delay: 0.4s;
-}
-
-.menu__item:nth-child(5) {
-  animation-delay: 0.5s;
-}
-
-.menu__item:nth-child(6) {
-  animation-delay: 0.6s;
-}
-
-.menu__item:nth-child(7) {
-  animation-delay: 0.7s;
-}
-
-.menu__item:nth-child(8) {
-  animation-delay: 0.8s;
-}
-
-.menu__item:nth-child(9) {
-  animation-delay: 0.9s;
 }
 
 .menu__item-selected {
   position: absolute;
   top: 0px;
-  right: -80px;
+  right: -131px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -701,6 +687,11 @@ input {
   border-bottom-right-radius: 15px;
   transform-origin: right;
   transition: all 500ms ease;
+}
+@media (min-width: 992px) {
+  .menu__item-selected {
+    right: -116px;
+  }
 }
 .menu__item-selected > .menu__item-selected__icon {
   transition: transform 700ms ease;
@@ -736,6 +727,8 @@ input {
   text-align: center;
   background-color: #99E2D0;
   opacity: 0.9;
+  animation: stop-spinner 3s;
+  animation-fill-mode: forwards;
 }
 
 .loading-spinner-round {
@@ -768,6 +761,15 @@ input {
   }
   100% {
     transform: translate(0, 0);
+  }
+}
+@keyframes stop-spinner {
+  0% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
   }
 }
 @media (min-width: 768px) {
