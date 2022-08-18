@@ -97,17 +97,18 @@ input {display: none;}
   cursor: pointer;
   animation: fade-in-menu 0.8s;
   .menu__item__content {
-    // background-color: antiquewhite;
     padding: 0.6em 0.5em 0.6em 0.6em;
     line-height: 1.6em;
     .menu__item__content__title {
       font-size: 1.1rem;
       font-weight: 500;
       margin: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     p {
       font-size: 0.9rem;
-      width: 260px;
       margin: 0;
       font-weight: 300;
       white-space: nowrap;
@@ -187,20 +188,17 @@ input {display: none;}
 }
 
 .menu__item:hover {
-  >.menu__item__content {
-    width: 60%;
-    overflow: hidden;
+  .menu__item__content {
+    width: 65%;
   }
-  > .menu__item-selected {
-    // transform: scale(1);
+  .menu__item__price {
+    transform: translateX(-220%);
+  }
+  .menu__item-selected {
     right: 0px;
     .menu__item-selected__icon {
       transform: rotate(360deg);
     }
-  }
-  > .menu__item__price {
-    // margin-right: 5em;
-    transform: translateX(-110%);
   }
 }
 
