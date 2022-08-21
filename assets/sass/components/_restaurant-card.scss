@@ -33,6 +33,11 @@
   }
 }
 
+.restaurant-card:hover {
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+}
+
 .tag-new {
   position: absolute;
   top: 15px;
@@ -73,6 +78,7 @@
   cursor: pointer;
   transition: all 1s ease-in;
   background-color: black;
+  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
