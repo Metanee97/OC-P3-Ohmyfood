@@ -442,6 +442,7 @@ a {
 .restaurant-card__content p {
   margin: 0;
   padding-bottom: 0.5em;
+  font-weight: 100;
 }
 .restaurant-card__content p:first-child {
   font-weight: 600;
@@ -484,7 +485,7 @@ footer {
 
 .footer__list {
   padding: 0.2em 0em 2em 1.4em;
-  margin: 0 2em;
+  margin: 0;
 }
 @media (min-width: 768px) {
   .footer__list {

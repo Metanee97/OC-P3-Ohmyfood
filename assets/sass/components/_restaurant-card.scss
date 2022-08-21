@@ -53,6 +53,7 @@
 }
 
 .restaurant-card__content {
+
   display: flex;
   justify-content: space-between;
   padding: 15px 23px 0px 14px;
@@ -60,6 +61,7 @@
   p {
     margin: 0;
     padding-bottom: 0.5em;
+    font-weight: 100;
   }
     p:first-child {
       font-weight: 600;
