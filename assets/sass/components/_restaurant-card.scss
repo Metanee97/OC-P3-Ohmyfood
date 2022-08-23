@@ -1,3 +1,7 @@
+.container__restaurant-card {
+  position: relative;
+}
+
 .restaurant-card {
   width: 85vw;
   height: 250px;
@@ -69,6 +73,9 @@
 }
 
 .restaurant-card__content__button-icon {
+  position: absolute;
+  top: 12em;
+  right: 2em;
   background-color: #f7f7f7;
   border: none;
 }
