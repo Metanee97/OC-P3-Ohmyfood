@@ -419,8 +419,7 @@ a {
 }
 
 .restaurant-card:hover {
-  transform: scale(1.1);
-  transition-duration: 0.2s;
+  box-shadow: 2px 5px 12px 1px rgba(166, 160, 160, 0.8588235294);
 }
 
 .tag-new {
