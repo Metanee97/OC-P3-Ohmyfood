@@ -70,6 +70,12 @@
   text-align: center;
 }
 
+.header__logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header__logo {
   height: 30px;
   margin-top: 1.7em;
@@ -119,13 +125,18 @@
     margin: 3em 5em 0 5em;
   }
   @media (min-width : 992px) {
-    margin: 3em 15em 0 15em;
+    // margin: 3em 15em 0 15em;
   }
 }
 
 .all-instructions {
   margin-bottom: 4em;
   counter-reset: instructions-counter;
+  background-color: #99E2D0;
+  @media (min-width: 992px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .instructions__item {
@@ -137,6 +148,9 @@
   border-radius: 15px;
   background-color: $background-color;
   box-shadow: 2px 6px 12px 0px #e1e1e1db;
+  @media (min-width: 992px) {
+    // width: 25px;
+  }
   &::before {
     counter-increment: instructions-counter;
     content: counter(instructions-counter);
@@ -172,6 +186,11 @@
   padding: 2em 1.1em 2em 1.4em;
   background-color: $background-color;
   // height: 500px;
+  @media (min-width: 768px) {
+    h2 {
+      margin-left: 1em;
+    }
+  }
 }
 
 .all-restaurants-cards {

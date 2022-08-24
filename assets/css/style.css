@@ -842,6 +842,12 @@ input {
   text-align: center;
 }
 
+.header__logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header__logo {
   height: 30px;
   margin-top: 1.7em;
@@ -896,15 +902,16 @@ input {
     margin: 3em 5em 0 5em;
   }
 }
-@media (min-width: 992px) {
-  .instructions {
-    margin: 3em 15em 0 15em;
-  }
-}
-
 .all-instructions {
   margin-bottom: 4em;
   counter-reset: instructions-counter;
+  background-color: #99E2D0;
+}
+@media (min-width: 992px) {
+  .all-instructions {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .instructions__item {
@@ -949,6 +956,11 @@ input {
 .restaurants-section {
   padding: 2em 1.1em 2em 1.4em;
   background-color: rgba(246, 246, 246, 0.8588235294);
+}
+@media (min-width: 768px) {
+  .restaurants-section h2 {
+    margin-left: 1em;
+  }
 }
 
 @media (min-width: 768px) {
