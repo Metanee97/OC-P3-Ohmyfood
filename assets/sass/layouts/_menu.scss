@@ -24,7 +24,7 @@
       // justify-content: space-around;
       // margin-bottom: 40px;
     }
-    @media (min-width : 996px) {
+    @media (min-width : 992px) {
       margin-left: 1em;
     }
     .menu__header__title {
@@ -49,7 +49,7 @@
   @media (min-width : 768px) {
   align-items: center;
   }
-  @media (min-width : 996px) {
+  @media (min-width : 992px) {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -91,7 +91,7 @@ input {display: none;}
   @media (min-width : 768px) {
     width: 65vw;
   }
-  @media (min-width : 996px) {
+  @media (min-width : 992px) {
     width: 28vw;
   }
   display: flex;
@@ -109,7 +109,7 @@ input {display: none;}
   animation-fill-mode: forwards;
   opacity: 0;
   .menu__item__content {
-    @media (min-width : 996px) {
+    @media (min-width : 992px) {
       width: 23vw;
     }
     padding: 0.6em 0.5em 0.6em 0.6em;
@@ -134,7 +134,7 @@ input {display: none;}
     }
   }
     .menu__item__price {
-      margin-right: 1em;
+      margin-right: 1rem;
       margin-top: 2em;
       font-weight: 500;
       // background-color: burlywood;
@@ -165,7 +165,6 @@ input {display: none;}
   position: absolute;
   top: 0px;
   right: -131px;
-  // left: 596px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -176,7 +175,6 @@ input {display: none;}
   background-color: $tertiary-color;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  // transform: scale(0);
   transform-origin: right;
   transition: all 500ms ease;
   @media (min-width:992px) {
@@ -188,18 +186,38 @@ input {display: none;}
   }
 }
 
+@keyframes slide-price {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-16vw);
+  }
+}
+
+@media (min-width: 992px) {
+  @keyframes slide-price {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-7vw);
+    }
+  }
+}
+
 .menu__item:hover {
-  // @media (min-width: 992px) {
     .menu__item__content {
       width: 65%;
     }
     .menu__item__price {
-      transform: translateX(-17vw);
-      @media (min-width : 768px) {
-        transform: translateX(-12vw);
+      animation: slide-price 0.5s;
+      animation-fill-mode: forwards;
+      @media (min-width: 768px) {
+        margin-right: 0.3rem;
       }
-      @media (min-width : 996px) {
-      transform: translateX(-5vw);
+      @media (min-width: 992px) {
+        margin-right: 0;
       }
     }
     .menu__item-selected {
@@ -208,7 +226,6 @@ input {display: none;}
         transform: rotate(360deg);
       }
     }
-  // }
 }
 
 .btn-order {
