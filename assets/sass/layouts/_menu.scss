@@ -19,8 +19,13 @@
     justify-content: space-between;
     font-family: $logo;
     @media (min-width : 768px) {
-      justify-content: space-around;
-      margin-bottom: 40px;
+      margin-left: 8em;
+      margin-right: 2em;
+      // justify-content: space-around;
+      // margin-bottom: 40px;
+    }
+    @media (min-width : 996px) {
+      margin-left: 1em;
     }
     .menu__header__title {
       margin-top: 0;
@@ -38,13 +43,19 @@
   }
 
 // MENUS
-.all-menu {
+.all-menus {
   display: flex;
   flex-direction: column;
   @media (min-width : 768px) {
   align-items: center;
   }
+  @media (min-width : 996px) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  }
 }
+
 .menu__part__title {
   position: relative;
   margin-bottom: 1.6em;
@@ -80,6 +91,9 @@ input {display: none;}
   @media (min-width : 768px) {
     width: 65vw;
   }
+  @media (min-width : 996px) {
+    width: 28vw;
+  }
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -95,8 +109,12 @@ input {display: none;}
   animation-fill-mode: forwards;
   opacity: 0;
   .menu__item__content {
+    @media (min-width : 996px) {
+      width: 23vw;
+    }
     padding: 0.6em 0.5em 0.6em 0.6em;
     line-height: 1.6em;
+    // background-color: red;
     .menu__item__content__title {
       font-size: 1.1rem;
       font-weight: 500;
@@ -104,6 +122,7 @@ input {display: none;}
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      // background-color: aqua;
     }
     p {
       font-size: 0.9rem;
@@ -118,8 +137,9 @@ input {display: none;}
       margin-right: 1em;
       margin-top: 2em;
       font-weight: 500;
+      // background-color: burlywood;
       // transition: margin-right 330ms ease;
-      transition: transform 330ms ease;
+      // transition: transform 330ms ease;
     }
 }
 
@@ -174,7 +194,13 @@ input {display: none;}
       width: 65%;
     }
     .menu__item__price {
-      transform: translateX(-220%);
+      transform: translateX(-17vw);
+      @media (min-width : 768px) {
+        transform: translateX(-12vw);
+      }
+      @media (min-width : 996px) {
+      transform: translateX(-5vw);
+      }
     }
     .menu__item-selected {
       right: 0px;
