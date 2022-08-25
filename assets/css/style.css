@@ -470,6 +470,7 @@ a {
   }
 }
 .restaurant-card__heart-icon {
+  position: relative;
   font-size: 1.5rem;
   background-size: 100%;
   cursor: pointer;
@@ -755,27 +756,28 @@ input {
     }
   }
 }
-.menu__item:hover .menu__item__content {
+input:checked + .menu__item .menu__item__content {
   width: 65%;
 }
-.menu__item:hover .menu__item__price {
+input:checked + .menu__item .menu__item__price {
   animation: slide-price 0.5s;
   animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
 }
 @media (min-width: 768px) {
-  .menu__item:hover .menu__item__price {
+  input:checked + .menu__item .menu__item__price {
     margin-right: 0.3rem;
   }
 }
 @media (min-width: 992px) {
-  .menu__item:hover .menu__item__price {
+  input:checked + .menu__item .menu__item__price {
     margin-right: 0;
   }
 }
-.menu__item:hover .menu__item-selected {
+input:checked + .menu__item .menu__item-selected {
   right: 0px;
 }
-.menu__item:hover .menu__item-selected .menu__item-selected__icon {
+input:checked + .menu__item .menu__item-selected .menu__item-selected__icon {
   transform: rotate(360deg);
 }
 

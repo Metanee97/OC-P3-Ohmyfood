@@ -202,18 +202,20 @@ input {display: none;}
       transform: translateX(0);
     }
     100% {
-        transform: translateX(-7vw);
+      transform: translateX(-7vw);
     }
   }
 }
 
-.menu__item:hover {
+input:checked + .menu__item
+ {
     .menu__item__content {
       width: 65%;
     }
     .menu__item__price {
       animation: slide-price 0.5s;
       animation-fill-mode: forwards;
+      animation-timing-function: ease-in-out;
       @media (min-width: 768px) {
         margin-right: 0.3rem;
       }

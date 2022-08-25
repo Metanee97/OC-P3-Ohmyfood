@@ -92,6 +92,8 @@
 
 .restaurant-card__heart-icon {
   // color: $button-color;
+  position: relative;
+  // overflow: hidden;
   font-size: 1.5rem;
   background-size: 100%;
   cursor: pointer;
@@ -101,6 +103,14 @@
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+  // &::before {
+  //   position: absolute;
+  //   display: block;
+  //   content: "\f004";
+  //   width: 80px;
+  //   height: 80px;
+  //   background-image: red;
+  // }
   &:hover {
     animation-name: fillheart;
     animation-duration: 5s;
