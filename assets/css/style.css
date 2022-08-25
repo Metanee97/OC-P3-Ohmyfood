@@ -651,6 +651,7 @@ input {
   }
 }
 .menu__item .menu__item__content {
+  width: 72vw;
   padding: 0.6em 0.5em 0.6em 0.6em;
   line-height: 1.6em;
 }

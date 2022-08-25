@@ -109,6 +109,7 @@ input {display: none;}
   animation-fill-mode: forwards;
   opacity: 0;
   .menu__item__content {
+    width: 72vw;
     @media (min-width : 992px) {
       width: 23vw;
     }
