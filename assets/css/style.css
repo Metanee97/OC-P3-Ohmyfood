@@ -897,7 +897,7 @@ input {
 .instructions {
   margin: 3em 2em 0 2em;
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) {
   .instructions {
     margin: 3em 5em 0 5em;
   }
@@ -905,7 +905,6 @@ input {
 .all-instructions {
   margin-bottom: 4em;
   counter-reset: instructions-counter;
-  background-color: #99E2D0;
 }
 @media (min-width: 992px) {
   .all-instructions {
@@ -923,6 +922,11 @@ input {
   border-radius: 15px;
   background-color: rgba(246, 246, 246, 0.8588235294);
   box-shadow: 2px 6px 12px 0px rgba(225, 225, 225, 0.8588235294);
+}
+@media (min-width: 992px) {
+  .instructions__item {
+    padding-right: 1.6rem;
+  }
 }
 .instructions__item::before {
   counter-increment: instructions-counter;

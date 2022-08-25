@@ -121,7 +121,7 @@
 // Here is the instructions section
 .instructions {
   margin: 3em 2em 0 2em;
-  @media (min-width : 768px) and (max-width : 991px) {
+  @media (min-width : 768px) {
     margin: 3em 5em 0 5em;
   }
   @media (min-width : 992px) {
@@ -132,7 +132,6 @@
 .all-instructions {
   margin-bottom: 4em;
   counter-reset: instructions-counter;
-  background-color: #99E2D0;
   @media (min-width: 992px) {
     display: flex;
     justify-content: space-between;
@@ -149,7 +148,7 @@
   background-color: $background-color;
   box-shadow: 2px 6px 12px 0px #e1e1e1db;
   @media (min-width: 992px) {
-    // width: 25px;
+    padding-right: 1.6rem;
   }
   &::before {
     counter-increment: instructions-counter;
