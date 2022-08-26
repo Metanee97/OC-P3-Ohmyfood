@@ -207,8 +207,7 @@ input {display: none;}
   }
 }
 
-input:checked + .menu__item
- {
+input:checked + .menu__item {
     .menu__item__content {
       width: 65%;
     }

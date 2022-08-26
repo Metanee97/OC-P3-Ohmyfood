@@ -78,31 +78,32 @@
   border: none;
 }
 
-@keyframes fillheart {
- from {
-  opacity: 0;
- }
- to {
-  opacity: 1;
-  // background-color: red;
-  background-image: $button-color;
-  font-weight: 600;
- }
-}
+// @keyframes fillheart {
+//  from {
+//   opacity: 0;
+//  }
+//  to {
+//   opacity: 1;
+//   background-color: red;
+//   background-image: $button-color;
+//   font-weight: 600;
+//  }
+// }
 
 .restaurant-card__heart-icon {
   // color: $button-color;
-  position: relative;
+  // position: relative;
   // overflow: hidden;
   font-size: 1.5rem;
-  background-size: 100%;
+  // background-size: 100%;
   cursor: pointer;
-  background-color: black;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  // background-color: black;
+  // background-clip: text;
+  // -webkit-background-clip: text;
+  // -moz-background-clip: text;
+  // -webkit-text-fill-color: transparent;
+  // -moz-text-fill-color: transparent;
+
   // &::before {
   //   position: absolute;
   //   display: block;
@@ -111,14 +112,26 @@
   //   height: 80px;
   //   background-image: red;
   // }
-  &:hover {
-    animation-name: fillheart;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
+  // &:hover {
+  //   animation-name: fillheart;
+  //   animation-duration: 5s;
+  //   animation-fill-mode: forwards;
     // background-color: red;
   }
-}
-
-// .restaurant-card__heart-icon2 {
-//   font-size: 1.5rem;
 // }
+
+.restaurant-card__heart-icon2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  // font-weight: 600 !important;
+  // background-color: $button-color;
+  // background-color: black;
+  background-image: $button-color;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  // background-size: 100%;
+  cursor: pointer;
+}
