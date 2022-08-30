@@ -1,6 +1,4 @@
-
 // HEADER MENU
-
 .menu {
   position: relative;
   // position: absolute;
@@ -109,13 +107,14 @@ input {display: none;}
   animation-fill-mode: forwards;
   opacity: 0;
   .menu__item__content {
+    // display: block;
     width: 72vw;
-    @media (min-width : 992px) {
-      width: 23vw;
-    }
     padding: 0.6em 0.5em 0.6em 0.6em;
     line-height: 1.6em;
     // background-color: red;
+    @media (min-width : 992px) {
+      width: 23vw;
+    }
     .menu__item__content__title {
       font-size: 1.1rem;
       font-weight: 500;
@@ -134,14 +133,14 @@ input {display: none;}
       text-overflow: ellipsis;
     }
   }
-    .menu__item__price {
-      margin-right: 1rem;
-      margin-top: 2em;
-      font-weight: 500;
-      // background-color: burlywood;
-      // transition: margin-right 330ms ease;
-      // transition: transform 330ms ease;
-    }
+  .menu__item__price {
+    margin-right: 1rem;
+    margin-top: 2em;
+    font-weight: 500;
+    // background-color: burlywood;
+    // transition: margin-right 330ms ease;
+    // transition: transform 330ms ease;
+  }
 }
 
 .starter-1,
@@ -208,26 +207,26 @@ input {display: none;}
 }
 
 input:checked + .menu__item {
-    .menu__item__content {
-      width: 65%;
+  .menu__item__content {
+    width: 65%;
+  }
+  .menu__item__price {
+    animation: slide-price 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    @media (min-width: 768px) {
+      margin-right: 0.3rem;
     }
-    .menu__item__price {
-      animation: slide-price 0.5s;
-      animation-fill-mode: forwards;
-      animation-timing-function: ease-in-out;
-      @media (min-width: 768px) {
-        margin-right: 0.3rem;
-      }
-      @media (min-width: 992px) {
-        margin-right: 0;
-      }
+    @media (min-width: 992px) {
+      margin-right: 0;
     }
-    .menu__item-selected {
-      right: 0px;
-      .menu__item-selected__icon {
-        transform: rotate(360deg);
-      }
+  }
+  .menu__item-selected {
+    right: 0px;
+    .menu__item-selected__icon {
+      transform: rotate(360deg);
     }
+  }
 }
 
 .btn-order {
