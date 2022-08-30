@@ -677,9 +677,10 @@ input {
   text-overflow: ellipsis;
 }
 .menu__item .menu__item__price {
-  margin-right: 1rem;
+  margin-right: 1em;
   margin-top: 2em;
   font-weight: 500;
+  transition: all 330ms ease;
 }
 
 .starter-1,
@@ -727,40 +728,20 @@ input {
   transform: rotate(0deg);
 }
 
-@keyframes slide-price {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-16vw);
-  }
-}
-@media (min-width: 992px) {
-  @keyframes slide-price {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-7vw);
-    }
-  }
-}
 input:checked + .menu__item .menu__item__content {
   width: 65%;
 }
 input:checked + .menu__item .menu__item__price {
-  animation: slide-price 0.5s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out;
+  transform: translateX(-19vw);
 }
 @media (min-width: 768px) {
   input:checked + .menu__item .menu__item__price {
-    margin-right: 0.3rem;
+    transform: translateX(-11vw);
   }
 }
 @media (min-width: 992px) {
   input:checked + .menu__item .menu__item__price {
-    margin-right: 0;
+    transform: translateX(-5vw);
   }
 }
 input:checked + .menu__item .menu__item-selected {
