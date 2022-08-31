@@ -135,7 +135,7 @@
   counter-reset: instructions-counter;
   @media (min-width: 992px) {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
   }
 }
 
@@ -151,6 +151,7 @@
 
   @media (min-width: 992px) {
     padding-right: 1.6rem;
+    margin-right: 3em;
   }
   &::before {
     counter-increment: instructions-counter;

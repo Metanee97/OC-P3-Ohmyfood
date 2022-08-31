@@ -892,7 +892,6 @@ input:checked + .menu__item .menu__item-selected .menu__item-selected__icon {
 @media (min-width: 992px) {
   .all-instructions {
     display: flex;
-    justify-content: space-between;
   }
 }
 
@@ -909,6 +908,7 @@ input:checked + .menu__item .menu__item-selected .menu__item-selected__icon {
 @media (min-width: 992px) {
   .instructions__item {
     padding-right: 1.6rem;
+    margin-right: 3em;
   }
 }
 .instructions__item::before {
