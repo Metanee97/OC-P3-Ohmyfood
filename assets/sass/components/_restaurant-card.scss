@@ -75,7 +75,14 @@
   top: 12em;
   right: 2em;
   background-color: #f7f7f7;
-  border: none;
+  // border: none;
+}
+
+.restaurant-card__heart-button:hover {
+  .restaurant-card__heart-icon2 {
+    font-weight: 600 !important;
+    z-index: 10;
+  }
 }
 
 // @keyframes fillheart {
@@ -91,6 +98,10 @@
 // }
 
 .restaurant-card__heart-icon {
+  position: absolute;
+  top: 0em;
+  right: 2em;
+  z-index: 5;
   // color: $button-color;
   // position: relative;
   // overflow: hidden;
@@ -121,8 +132,11 @@
 // }
 
 .restaurant-card__heart-icon2 {
+  position: absolute;
+  top: 0em;
+  right: 2em;
   font-size: 1.5rem;
-  font-weight: 600;
+
   // font-weight: 600 !important;
   // background-color: $button-color;
   // background-color: black;
