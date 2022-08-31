@@ -114,6 +114,7 @@
     +p {
       margin-bottom: 2.5em;
       font-size: 1.1rem;
+      font-weight: 100;
     }
   }
 }
@@ -147,6 +148,7 @@
   border-radius: 15px;
   background-color: $background-color;
   box-shadow: 2px 6px 12px 0px #e1e1e1db;
+
   @media (min-width: 992px) {
     padding-right: 1.6rem;
   }
@@ -170,8 +172,11 @@
     background: $light-primary-color;
     color: $primary-color;
     .instructions__item-icon {
-        color: $primary-color ;
-      }
+      color: $primary-color ;
+    }
+    p {
+      color: black;
+    }
   }
   .instructions__item-icon {
     margin: 0 1.4em 0;
