@@ -20,7 +20,6 @@
   .restaurant-card__img {
     position: relative;
     height: 170px;
-    // height: 238px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     overflow: hidden;
@@ -30,7 +29,6 @@
       width: 100%;
       height: 100%;
       top: 50%;
-      // top: 26%;
       left: 50%;
       transform: translate(-50%, -50%);
     }
@@ -73,79 +71,42 @@
 .restaurant-card__heart-button {
   position: absolute;
   top: 12em;
-  right: 2em;
+  right: 4em;
   background-color: #f7f7f7;
-  // border: none;
+  border: none;
 }
 
 .restaurant-card__heart-button:hover {
+  // .restaurant-card__heart-icon {
+  //   color: pink;
+  // }
   .restaurant-card__heart-icon2 {
-    font-weight: 600 !important;
     z-index: 10;
+    opacity: 1;
   }
 }
-
-// @keyframes fillheart {
-//  from {
-//   opacity: 0;
-//  }
-//  to {
-//   opacity: 1;
-//   background-color: red;
-//   background-image: $button-color;
-//   font-weight: 600;
-//  }
-// }
 
 .restaurant-card__heart-icon {
   position: absolute;
   top: 0em;
-  right: 2em;
   z-index: 5;
-  // color: $button-color;
-  // position: relative;
-  // overflow: hidden;
+  // color: black;
   font-size: 1.5rem;
-  // background-size: 100%;
   cursor: pointer;
-  // background-color: black;
-  // background-clip: text;
-  // -webkit-background-clip: text;
-  // -moz-background-clip: text;
-  // -webkit-text-fill-color: transparent;
-  // -moz-text-fill-color: transparent;
-
-  // &::before {
-  //   position: absolute;
-  //   display: block;
-  //   content: "\f004";
-  //   width: 80px;
-  //   height: 80px;
-  //   background-image: red;
-  // }
-  // &:hover {
-  //   animation-name: fillheart;
-  //   animation-duration: 5s;
-  //   animation-fill-mode: forwards;
-    // background-color: red;
+  // transition: all 300ms ease;
   }
-// }
 
 .restaurant-card__heart-icon2 {
   position: absolute;
   top: 0em;
-  right: 2em;
   font-size: 1.5rem;
-
-  // font-weight: 600 !important;
-  // background-color: $button-color;
-  // background-color: black;
+  opacity: 0;
+  transition: all 500ms ease;
+  font-weight: 600 !important;
   background-image: $button-color;
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  // background-size: 100%;
-  // cursor: pointer;
 }
