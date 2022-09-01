@@ -545,6 +545,10 @@ footer {
   object-fit: cover;
 }
 
+.container__menu__item {
+  border: solid 1px red;
+}
+
 .menu {
   position: relative;
   top: -3.7em;
@@ -586,6 +590,7 @@ footer {
 }
 
 .all-menus {
+  border: solid 1px blue;
   display: flex;
   flex-direction: column;
 }
@@ -664,6 +669,10 @@ input {
   width: 72vw;
   padding: 0.6em 0.5em 0.6em 0.6em;
   line-height: 1.6em;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 @media (min-width: 992px) {
   .menu__item .menu__item__content {
@@ -673,18 +682,10 @@ input {
 .menu__item .menu__item__content .menu__item__content__title {
   font-size: 1.1rem;
   font-weight: 500;
-  margin: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .menu__item .menu__item__content .menu__item__content__description {
   font-size: 0.9rem;
-  margin: 0;
   font-weight: 300;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .menu__item .menu__item__price {
   margin-right: 1em;
@@ -709,6 +710,10 @@ input {
 .dish-3,
 .dessert-3 {
   animation-delay: 0.5s;
+}
+
+.starter-4 {
+  animation-delay: 0.6s;
 }
 
 .menu__item-selected {
