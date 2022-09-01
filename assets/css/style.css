@@ -380,8 +380,7 @@ a {
 .container__restaurant-card {
   position: relative;
 }
-
-.restaurant-card {
+.container__restaurant-card .restaurant-card {
   width: 85vw;
   height: 250px;
   margin-left: auto;
@@ -392,23 +391,23 @@ a {
   box-shadow: 1px 4px 11px 0px rgba(166, 160, 160, 0.8588235294);
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .restaurant-card {
+  .container__restaurant-card .restaurant-card {
     width: 40vw;
   }
 }
 @media (min-width: 992px) {
-  .restaurant-card {
+  .container__restaurant-card .restaurant-card {
     width: 50vh;
   }
 }
-.restaurant-card .restaurant-card__img {
+.container__restaurant-card .restaurant-card .restaurant-card__img {
   position: relative;
   height: 170px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   overflow: hidden;
 }
-.restaurant-card .restaurant-card__img img {
+.container__restaurant-card .restaurant-card .restaurant-card__img img {
   position: absolute;
   object-fit: cover;
   width: 100%;
@@ -424,8 +423,8 @@ a {
 
 .tag-new {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 1em;
+  right: 1.4em;
   z-index: 5;
   width: 90px;
   height: 30px;
