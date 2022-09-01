@@ -119,14 +119,11 @@
   }
 }
 
-// Here is the instructions section
+// INSTRUCTIONS SECTION
 .instructions {
   margin: 3em 2em 0 2em;
   @media (min-width : 768px) {
     margin: 3em 5em 0 5em;
-  }
-  @media (min-width : 992px) {
-    // margin: 3em 15em 0 15em;
   }
 }
 
@@ -135,7 +132,6 @@
   counter-reset: instructions-counter;
   @media (min-width: 992px) {
     display: flex;
-    // justify-content: space-between;
   }
 }
 
@@ -148,7 +144,7 @@
   border-radius: 15px;
   background-color: $background-color;
   box-shadow: 2px 6px 12px 0px #e1e1e1db;
-
+  font-weight: 600;
   @media (min-width: 992px) {
     padding-right: 1.6rem;
     margin-right: 3em;
@@ -186,11 +182,10 @@
   }
 }
 
-// Here is the restaurants section
+// RESTAURANTS SECTION
 .restaurants-section {
   padding: 2em 1.1em 2em 1.4em;
   background-color: $background-color;
-  // height: 500px;
   @media (min-width: 768px) {
     h2 {
       margin-left: 1em;

@@ -61,10 +61,10 @@
     margin: 0;
     padding-bottom: 0.5em;
     font-weight: 100;
-  }
-    p:first-child {
+    &:first-child {
       font-weight: 600;
     }
+  }
 }
 
 .restaurant-card__heart-button {
