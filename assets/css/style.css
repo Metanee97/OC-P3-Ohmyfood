@@ -678,7 +678,7 @@ input {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu__item .menu__item__content p {
+.menu__item .menu__item__content .menu__item__content__description {
   font-size: 0.9rem;
   margin: 0;
   font-weight: 300;

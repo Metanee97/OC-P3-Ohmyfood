@@ -1,8 +1,6 @@
 // HEADER MENU
 .menu {
   position: relative;
-  // position: absolute;
-  // top: -90px;
   top: -3.7em;
   width: 100%;
   max-width: 100%;
@@ -19,8 +17,6 @@
     @media (min-width : 768px) {
       margin-left: 8em;
       margin-right: 2em;
-      // justify-content: space-around;
-      // margin-bottom: 40px;
     }
     @media (min-width : 992px) {
       margin-left: 1em;
@@ -33,7 +29,6 @@
     }
     &>.menu__icon {
       margin-right: 0.5em;
-      // margin-bottom: 1.1em;
       font-size: 1.4rem;
       font-weight: 100;
       }
@@ -107,11 +102,9 @@ input {display: none;}
   animation-fill-mode: forwards;
   opacity: 0;
   .menu__item__content {
-    // display: block;
     width: 72vw;
     padding: 0.6em 0.5em 0.6em 0.6em;
     line-height: 1.6em;
-    // background-color: red;
     @media (min-width : 992px) {
       width: 23vw;
     }
@@ -122,9 +115,8 @@ input {display: none;}
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      // background-color: aqua;
     }
-    p {
+    .menu__item__content__description {
       font-size: 0.9rem;
       margin: 0;
       font-weight: 300;
@@ -137,8 +129,6 @@ input {display: none;}
     margin-right: 1em;
     margin-top: 2em;
     font-weight: 500;
-    // background-color: burlywood;
-    // transition: margin-right 330ms ease;
     transition: all 330ms ease;
   }
 }
@@ -186,44 +176,17 @@ input {display: none;}
   }
 }
 
-// @keyframes slide-price {
-//   0% {
-//     transform: translateX(0);
-//   }
-//   100% {
-//     transform: translateX(-16vw);
-//   }
-// }
-
-// @media (min-width: 992px) {
-//   @keyframes slide-price {
-//     0% {
-//       transform: translateX(0);
-//     }
-//     100% {
-//       transform: translateX(-7vw);
-//     }
-//   }
-// }
-
 input:checked + .menu__item {
   .menu__item__content {
     width: 65%;
   }
   .menu__item__price {
     transform: translateX(-19vw);
-    // margin-right: 19vw;
-    // animation: slide-price 0.5s;
-    // animation-fill-mode: forwards;
-    // animation-timing-function: ease-in-out;
     @media (min-width: 768px) {
       transform: translateX(-11vw);
-      // margin-right: 0.3rem;
-      // margin-right: 13vw;
     }
     @media (min-width: 992px) {
       transform: translateX(-5vw);
-      // margin-right: 6vw;
     }
   }
   .menu__item-selected {
