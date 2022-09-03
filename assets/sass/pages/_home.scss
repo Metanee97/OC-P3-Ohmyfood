@@ -194,8 +194,11 @@
 }
 
 .all-restaurants-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   @media (min-width : 768px) {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
   }
